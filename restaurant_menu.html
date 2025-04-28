@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sous Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    
+        nav {
+            margin-top: 1rem;
+        }
+    
+        nav li {
+            display: inline;
+            margin: 0 15px;
+            list-style: none;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        main {
+            padding: 2rem;
+        }
+
+        #menu {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #menu h2 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+    
+        .menu-items article {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+    
+        article img {
+            width: 100%;
+            height: auto;
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    
+        article h3 {
+            margin-top: 0.5rem;
+            color: #d35400;
+        }
+    
+        article p {
+            font-size: 0.95rem;
+        }
+    
+        #order-form {
+            margin-top: 3rem;
+        }
+
+        #order-form h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+    
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 0 auto;
+        }
+    
+        form label {
+            font-weight: bold;
+        }
+    
+        form input[type="number"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    
+        form input[type="submit"] {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        form input[type="submit"]:hover {
+            background-color: #d35400;
+        }
+    
+        #footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+    
+        #footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+    
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>    
+</head>
+
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPY77NwQr2ijvUaG526WAoO2T0r0CxgPwddQ&s"
+            alt="My Restaurant" id="header-img">
+        <h1>The Sous Restaurant</h1>
+        <nav>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-form">Order Form</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <div class="menu-items">
+                <article id="spaghetti-carbonara">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpS7o_fIavMfCNVTSzxOANsbf3v3-OUens6A&s"
+                            alt="Spaghetti Carbonara">
+                        <figcaption>Spaghetti Carbonara</figcaption>
+                    </figure>
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Creamy spaghetti tossed with crispy pancetta, parmesan, and black pepper. Only <i>$12.99</i>.</p>
+                </article>
+                <article id="vegan-delight-burger">
+                    <figure>
+                        <img src="https://www.momodelights.com/wp-content/uploads/2024/07/Special-Veg-Delight-Burger.jpg"
+                            alt="Vegan Delight Burger">
+                        <figcaption>Vegan Delight Burger</figcaption>
+                    </figure>
+                    <h3>Vegan Delight Burger</h3>
+                    <p>A juicy plant-based patty layered with fresh veggies and vegan aioli. Priced at <i>$10.49</i>.</p>
+                </article>
+                <article id="berry-blast-smoothie">
+                    <figure>
+                        <img src="https://thebombco.com/cdn/shop/articles/21.png?v=1696254655&width=1200"
+                            alt="Berry Blast Smoothie">
+                        <figcaption>Berry Blast Smoothie</figcaption>
+                    </figure>
+                    <h3>Berry Blast Smoothie</h3>
+                    <p>A refreshing blend of strawberries, blueberries, and raspberries. Just <i>$6.25</i>.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="" method="get">
+                <label for="count-spaghetti-carbonara">No of <a href="#spaghetti-carbonara">Spaghetti Carbonara</a>:</label>
+                <input type="number" name="count-spaghetti-carbonara" id="count-spaghetti-carbonara" min="0" value="0">
+                <br><br>
+
+                <label for="count-vegan-delight-burger">No of <a href="#vegan-delight-burger">Vegan Delight Burger</a>:</label>
+                <input type="number" name="count-vegan-delight-burger" id="count-vegan-delight-burger" min="0"
+                    value="0">
+                <br><br>
+
+                <label for="count-berry-blast-smoothie">No of <a href="#berry-blast-smoothie">Berry Blast Smoothie</a>:</label>
+                <input type="number" name="count-berry-blast-smoothie" id="count-berry-blast-smoothie" min="0"
+                    value="0">
+                <br><br>
+
+                <label for="add-ons">Add-ons:</label>
+                <br>
+                <input type="checkbox" name="add-ons" id="add-ons" value="extra-cheese"> Extra Cheese
+                <input type="checkbox" name="add-ons" id="add-ons" value="extra-sauce"> Extra Sauce
+                <input type="checkbox" name="add-ons" id="add-ons" value="extra-vegetables"> Extra Vegetables
+                <br><br>
+
+                <label for="sides">Sides:</label>
+                <br>
+                <input type="radio" name="sides" id="sides" value="fries"> Fries
+                <input type="radio" name="sides" id="sides" value="salad"> Salad
+                <input type="radio" name="sides" id="sides" value="garlic-bread"> Garlic Bread
+                <br><br>
+
+                <label for="special-requests">Special Requests:</label>
+                <br>
+                <textarea name="special-requests" id="special-requests" rows="4" cols="50"
+                    placeholder="Any special requests?"></textarea>
+                <br><br>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+
+        <section id="footer">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:nguyentrungson217@gmail.com">nguyentrungson217@gmail.com</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
